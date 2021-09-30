@@ -20,6 +20,28 @@ sudo apt install build-essential cmake git pkg-config libgtk-3-dev \
 git clone https://github.com/opencv/opencv.git
 cd opencv
 ```
+**Create a folder named `build`**
 
+```
+mkdir -p build && cd build
+```
 
+**Set up the OpenCV build with CMake:**
+```
+cmake ../
+```
+**Start Complination**
+```
+make -j [no of core you want for the complination.]
+```
+
+**Install**
+```
+sudo make install
+```
+
+**check the installation is completed perfectly**
+```
+python3 -c "import cv2; print(cv2.__version__)"
+```
 
