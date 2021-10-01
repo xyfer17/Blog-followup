@@ -30,9 +30,9 @@ mkdir -p build && cd build
 ```
 cmake ../
 ```
-**Start Complination**
+**Start Compilation**
 ```
-make -j [no of core you want for the complination.]
+make -j [no of core you want for the compilation.]
 ```
 
 **Install**
