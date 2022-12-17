@@ -45,4 +45,10 @@ sudo make install
 python3 -c "import cv2; print(cv2.__version__)"
 ```
 
-**test**
+## git tutorial
+
+**git credential save**
+
+```
+git config --global credential.helper store
+```
