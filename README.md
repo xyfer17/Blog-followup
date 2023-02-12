@@ -52,3 +52,15 @@ python3 -c "import cv2; print(cv2.__version__)"
 ```
 git config --global credential.helper store
 ```
+## How to host react app on firebase
+
+**step 1**
+Install firebase in your working directory
+```
+npm install -g firebase-tools
+```
+**step 2**
+First, we will initialize a firebase project in our React app by running the following command in the console in our root directory.
+```
+firebase init
+```
