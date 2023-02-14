@@ -58,8 +58,15 @@ git config --global credential.helper store
 Install firebase in your working directory
 ```
 npm install -g firebase-tools
+
 ```
 **step 2**
+Login the Firebase
+```
+firebase login
+```
+
+**step 3**
 First, we will initialize a firebase project in our React app by running the following command in the console in our root directory.
 ```
 firebase init
