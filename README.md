@@ -71,3 +71,10 @@ First, we will initialize a firebase project in our React app by running the fol
 ```
 firebase init
 ```
+## How to make particular node version as  default using nvm
+```
+$ nvm alias default 16.14.2
+$ nvm use
+
+$ node -v
+```
