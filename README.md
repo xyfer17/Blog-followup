@@ -78,3 +78,12 @@ $ nvm use
 
 $ node -v
 ```
+
+## How to set up Eslintrc Configuration
+
+* step 1:
+```
+$ npm init @eslint/config
+```
+* step 2 : 
+ [Click Here](https://levelup.gitconnected.com/configure-eslint-and-prettier-for-your-react-project-like-a-pro-2022-10287986a1b6)
