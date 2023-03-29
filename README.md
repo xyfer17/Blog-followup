@@ -87,3 +87,8 @@ $ npm init @eslint/config
 ```
 * step 2 : 
  [Click Here](https://levelup.gitconnected.com/configure-eslint-and-prettier-for-your-react-project-like-a-pro-2022-10287986a1b6)
+ 
+ ## how to kill the port process
+```
+$ sudo kill -9 $(sudo lsof -t -i:<port>)
+```
