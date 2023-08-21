@@ -240,3 +240,8 @@ You can access your React application in a web browser by navigating to `http://
 Please note that this is a basic example. In a real-world scenario, you might need to configure environment variables, handle more advanced application setup, and consider best practices for Docker images and containers.
 
 Additionally, if you're planning to deploy the Dockerized React application, you'll need to consider how to deploy it to a cloud platform, set up a reverse proxy, configure CI/CD pipelines, and more, depending on your project's requirements.
+
+**6. To Remove UNTAG docker images**
+```
+docker system prune -f
+```
