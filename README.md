@@ -245,3 +245,15 @@ Additionally, if you're planning to deploy the Dockerized React application, you
 ```
 docker system prune -f
 ```
+
+## How create a new git repo
+
+```
+echo "# monolithic_structure" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/xyfer17/monolithic_structure.git
+git push -u origin main
+```
