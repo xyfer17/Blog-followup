@@ -257,3 +257,8 @@ git branch -M main
 git remote add origin https://github.com/xyfer17/monolithic_structure.git
 git push -u origin main
 ```
+## How to execute the postgres
+
+```
+docker exec -it <your-postgres-container-name> psql -U postgres
+```
