@@ -262,3 +262,9 @@ git push -u origin main
 ```
 docker exec -it <your-postgres-container-name> psql -U postgres
 ```
+
+## Steps for branching from main and switch to main
+```
+git switch main
+git checkout -b <branch-name>
+```
