@@ -268,3 +268,48 @@ docker exec -it <your-postgres-container-name> psql -U postgres
 git switch main
 git checkout -b <branch-name>
 ```
+
+## How to setup django 
+
+```
+$ django-admin startproject mysite
+```
+
+### Let’s look at what startproject created:
+```
+mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+```
+The development server¶
+Let’s verify your Django project works. Change into the outer mysite directory, if you haven’t already, and run the following commands:
+
+```
+$ python manage.py runserver
+```
+To create your app, make sure you’re in the same directory as manage.py and type this command:
+
+```
+$ python manage.py startapp appName
+```
+
+That’ll create a directory polls, which is laid out like this:
+
+```
+appName/
+    __init__.py
+    admin.py
+    apps.py
+    migrations/
+        __init__.py
+    models.py
+    tests.py
+    views.py
+```
+
+for more ref: [tutorial 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
