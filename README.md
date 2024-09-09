@@ -409,3 +409,74 @@ To deploy a Node.js app on an EC2 instance, you can follow these general steps:
    - Consider using CI/CD tools like **GitHub Actions**, **Jenkins**, or **AWS CodeDeploy** to automate the deployment process.
 
 By following these steps, your Node.js app should be successfully deployed and running on an EC2 instance.
+
+
+To clone a Git repository using SSH, follow these steps:
+
+
+## How to Generate SSH key
+
+### 1. **Generate an SSH Key (If You Haven't Already)**
+If you don't have an SSH key, you'll need to generate one and add it to your Git hosting service (e.g., GitHub, GitLab).
+
+#### a. Generate SSH Key
+On your local machine (or server), open a terminal and run:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+- Press **Enter** to accept the default location to save the key (`~/.ssh/id_rsa`).
+- You can set a passphrase (optional) or leave it empty by pressing **Enter**.
+
+#### b. Add the SSH Key to Your SSH Agent
+Run the following commands to add your new SSH key to the SSH agent:
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+
+#### c. Copy the SSH Key to Your Clipboard
+Now, copy your public SSH key:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+Copy the output of this command.
+
+### 2. **Add the SSH Key to Your Git Service**
+
+- **For GitHub**: 
+  1. Go to **GitHub** > **Settings** > **SSH and GPG keys**.
+  2. Click **New SSH key**, give it a title, and paste your public key.
+  
+- **For GitLab**: 
+  1. Go to **GitLab** > **Profile Settings** > **SSH Keys**.
+  2. Paste the public key and give it a title.
+
+### 3. **Clone the Repository via SSH**
+
+Once the SSH key is added to your Git hosting service, you can clone the repository.
+
+1. Get the SSH clone URL from the repository. It will look something like this:
+   ```
+   git@github.com:username/repository.git
+   ```
+
+2. Run the following command to clone the repo:
+
+```bash
+git clone git@github.com:username/repository.git
+```
+
+Replace `git@github.com:username/repository.git` with the actual SSH URL of the repository you want to clone.
+
+### Example:
+
+```bash
+git clone git@github.com:yourusername/yourrepository.git
+```
+
+This will clone the repository into a new directory named `yourrepository`.
